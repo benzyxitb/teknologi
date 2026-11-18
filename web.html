@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Teknologi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teknologi Masa Depan</h1>
+        <p>Tentang Ide, Cerita, dan Perkembangan Dunia Digital</p>
+    </header>
+
+    <main>
+        <article>
+            <h2></h2>
+            <img class="gambar-artikel" src="gambar.png">
+            <p>Teknologi dapat membantu kita menggunakan energi dan sumber daya dengan lebih bijak. Panel surya, kendaraan listrik, serta perangkat hemat energi memberi pilihan baru untuk mengurangi dampak aktivitas sehari-hari terhadap lingkungan.</p>
+            <p>Perubahan besar juga berawal dari kebiasaan sederhana. Memilih perangkat yang tahan lama, memperbaiki barang sebelum menggantinya, dan mematikan alat yang tidak digunakan adalah langkah kecil menuju masa depan yang lebih berkelanjutan.</p>
+        </article>
+
+        <aside>
+            <img class="foto-profil" src="profil.png">
+            <h2>Tentang Penulis</h2>
+            <p>Halo, saya Fathir, Saya Murid Smk Telkom Malang yang Suka Melihat Teknologi Atau Kemajuan Teknologi Masa Depan.</p>
+        </aside>
+    </main>
+
+    <form id="formKontak" action="#" method="get">
+        <h2>Hubungi Saya</h2>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="50">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="topik">Topik</label>
+            <select id="topik" name="topik" required>
+                <option value="">-- Pilih --</option>
+                <option value="teknologi">Teknologi</option>
+                <option value="kolaborasi">Kolaborasi</option>
+                <option value="pertanyaan">Pertanyaan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" required minlength="10" maxlength="200"></textarea>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="langganan" name="langganan">
+            <label for="langganan">Langganan artikel baru</label>
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2026 Teknologi Masa Depan. Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>

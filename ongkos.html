@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Ongkos Kirim</title>
+</head>
+<body>
+    <main>
+        <h1>Kalkulator Ongkos Kirim</h1>
+        <div>
+            <label for="namaPengirim">Nama pengirim:</label>
+            <input type="text" id="namaPengirim" name="namaPengirim">
+        </div>
+        <div>
+            <label for="berat">Berat (kg):</label>
+            <input type="number" id="berat" name="berat" min="0" step="any">
+        </div>
+        <div>
+            <label for="jarak">Jarak (km):</label>
+            <input type="number" id="jarak" name="jarak" min="0" step="any">
+        </div>
+        <button type="button" id="btnHitung">Hitung Ongkir</button>
+        <p id="hasilOngkir" aria-live="polite"></p>
+    </main>
+    <script src="ongkos.ts" defer></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f6f7;
+    color: #565b5e;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 28px 20px;
+    background-color: #03d9ff;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1,
+header p,
+footer p {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    gap: 28px;
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+article {
+    flex: 7;
+    min-width: 0;
+}
+
+article h2,
+aside h2,
+form h2 {
+    color: #4a9ab8;
+}
+
+.gambar-artikel {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+aside {
+    flex: 3;
+    align-self: flex-start;
+    padding: 22px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.foto-profil {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+form#formKontak {
+    max-width: 620px;
+    margin: 36px auto;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #d2dfe2;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(23, 60, 74, 0.08);
+}
+
+form#formKontak h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #aebfc4;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #26343a;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 4px 0 20px;
+}
+
+.checkbox-group input {
+    width: 17px;
+    height: 17px;
+}
+
+button[type="submit"] {
+    padding: 11px 24px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #176b70;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #104c50;
+}
+
+footer {
+    padding: 18px;
+    background-color: #03d9ff;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    form#formKontak {
+        margin: 28px 20px;
+    }
+}

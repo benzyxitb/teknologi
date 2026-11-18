@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencatatan Rental Kendaraan</title>
+</head>
+<body>
+    <main>
+        <h1>Pencatatan Rental Kendaraan</h1>
+        <div>
+            <label for="kendaraan">Nama kendaraan:</label>
+            <input type="text" id="kendaraan" name="kendaraan">
+        </div>
+        <div>
+            <label for="lamaSewa">Lama sewa (hari):</label>
+            <input type="number" id="lamaSewa" name="lamaSewa" min="0" step="1">
+        </div>
+        <div>
+            <label for="tarifHari">Tarif per hari (rupiah):</label>
+            <input type="number" id="tarifHari" name="tarifHari" min="0" step="any">
+        </div>
+        <button type="button" id="btnSimpan">Simpan</button>
+        <p id="hasil" aria-live="polite"></p>
+    </main>
+    <script src="rental.js" defer></script>
+</body>
+</html>
